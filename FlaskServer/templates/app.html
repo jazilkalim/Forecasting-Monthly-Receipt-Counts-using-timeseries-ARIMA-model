@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Count Predictor</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="img"></div>
+        <form class="form">
+            <h2>Year</h2>
+            <input class="area" type="number" id="uiYear" name="year" value="2022" required>
+
+            <h2>Month</h2>
+            <div class="switch-field">
+                <input type="radio" id="radio-month-1" name="uiMonth" value="1" required />
+                <label for="radio-month-1">1</label>
+                <input type="radio" id="radio-month-2" name="uiMonth" value="2" checked />
+                <label for="radio-month-2">2</label>
+                <input type="radio" id="radio-month-3" name="uiMonth" value="3" />
+                <label for="radio-month-3">3</label>
+                <input type="radio" id="radio-month-4" name="uiMonth" value="4" />
+                <label for="radio-month-4">4</label>
+                <input type="radio" id="radio-month-5" name="uiMonth" value="5" />
+                <label for="radio-month-5">5</label>
+                <input type="radio" id="radio-month-6" name="uiMonth" value="6" />
+                <label for="radio-month-6">6</label>
+                <input type="radio" id="radio-month-7" name="uiMonth" value="7" />
+                <label for="radio-month-7">7</label>
+                <input type="radio" id="radio-month-8" name="uiMonth" value="8" />
+                <label for="radio-month-8">8</label>
+                <input type="radio" id="radio-month-9" name="uiMonth" value="9" />
+                <label for="radio-month-9">9</label>
+                <input type="radio" id="radio-month-10" name="uiMonth" value="10" />
+                <label for="radio-month-10">10</label>
+                <input type="radio" id="radio-month-11" name="uiMonth" value="11" />
+                <label for="radio-month-11">11</label>
+                <input type="radio" id="radio-month-12" name="uiMonth" value="12" />
+                <label for="radio-month-12">12</label>
+            </div>
+        </form>
+        <button class="submit" onclick="onClickedPredictCount()" type="button">Predict Receipt Count</button>
+        <div id="uiPredictionResult" class="result">
+            <h2>Prediction Result: <span id="predicted-count"></span></h2>
+        </div>
+    </div>
+</body>
+</html>

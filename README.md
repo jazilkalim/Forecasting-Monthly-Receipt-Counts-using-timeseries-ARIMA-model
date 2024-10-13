@@ -1,5 +1,5 @@
 # Forecasting-Monthly-Receipt-Counts-using-timeseries-ARIMA-model
-
+![UI Screenshot](UI_screenshot.JPG)
 ### Key Steps and Approaches
 
 #### Data Exploration and Analysis

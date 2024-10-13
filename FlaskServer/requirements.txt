@@ -1,0 +1,4 @@
+Flask==3.0.3
+numpy
+python_dateutil
+gunicorn

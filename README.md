@@ -29,4 +29,4 @@
 ## Directory Structure
 * Notebook folder: Python notebook for EDA and creating model
 * Flask server : All files needed to run the model prediction web service.
-* Docker Image: Docker image to run the project in a docker container
+* Docker Image: Docker image to run the project in a docker container. Image uploaded to google drive due to space constraints on Github - https://drive.google.com/file/d/14GZHevyAPCtrnBia0nn4-RG_b0Y0oLz3/view?usp=drive_link
